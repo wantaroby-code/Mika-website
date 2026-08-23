@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIKA | Fashion Store</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+             nav {
+    background: #000;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #111;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 35px;
+            letter-spacing: 4px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #ccc;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #111, #333);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: white;
+            color: #111;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .products {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px 15px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        .about {
+            background: white;
+            text-align: center;
+            padding: 45px 25px;
+        }
+
+        .about h2 {
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .contact {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .contact h2 {
+            margin-bottom: 12px;
+        }
+
+        .contact p {
+            margin-bottom: 22px;
+            color: #ccc;
+        }
+
+        footer {
+            background: #000;
+            color: #888;
+            text-align: center;
+            padding: 18px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+  
+</head>
+
+<body>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+    <header>
+    <div class="logo">MIKA</div>
+    <p>Fashion • Style • Confidence</p>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Karibu MIKA</h2>
+        <p>Style yako. Utambulisho wako.</p>
+        <a href="#products" class="button">Tazama Bidhaa</a>
+    </>
+
+    <section class="products" id="products">
+        <h2>Bidhaa Zetu</h2>
+
+        <div class="container">
+
+             <div class="card">
+    <img src="jacket.jpg" alt="Jacket">
+<h3>Jackets</h3>
+<p>Jackets zenye style kwa kila siku.</p>
+<p><strong>TZS 35,000</strong></p>
+    <a href="#" class="button">Order Now</a>
+             </div>
+
+            <div class="card">
+                <div class="icon">👖</div>
+                <p><strong>TZS 30,000</strong></p>
+                <p>Jeans zinazokupa muonekano wa kisasa.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">👕</div>
+                <p><strong>TZS 20,000</strong></p>
+                <p>T-Shirts kwa style tofauti.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎒</div>
+                <p><strong>TZS 25,000</strong></p>
+                <p>Mabegi yenye style na matumizi ya kila siku.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Kuhusu MIKA</h2>
+        <p>
+            MIKA ni brand inayolenga kuleta fashion yenye
+            muonekano wa kisasa, quality na style kwa vijana.
+            Tunataka kila mtu avae kwa kujiamini.
+        </p>
+    </>
+
+    <section class="contact" id="contact">
+        <h2>Wasiliana Nasi</h2>
+        <p>Uko tayari kupata bidhaa yako?</p>
+        <a href="#" class="button">Wasiliana Nasi</a>
+    </>
+
+    <footer>
+        © 2026 MIKA. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
